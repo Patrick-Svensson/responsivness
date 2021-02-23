@@ -7,6 +7,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    color: #242635;
 }
 
 .page-container {
@@ -21,26 +22,18 @@ body {
     width: 95%;
     margin: auto;
 
+    &-brand {
+        font-family: 'Baloo', sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+    }
+
     &-toggler {
         border: none;
-        position: relative;
     }
-
-    &-toggler-icon {
-        opacity: 0;
-        
-    }
-
-    &-toggler--icon {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        opacity: 100%;
-        font-size: 20px;
-    }
-
 }
-
 
 .recipes {
     max-width: 100%;
@@ -53,7 +46,26 @@ body {
 
 .text {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+    &__header {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+        padding-bottom: 10px;
+    }
+
+    &__paragraph {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        padding: 0 30px 10px 30px;
+    }
 }
 
