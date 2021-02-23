@@ -1,0 +1,52 @@
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-container {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.navbar {
+  width: 95%;
+  margin: auto;
+}
+.navbar-toggler {
+  border: none;
+  position: relative;
+}
+.navbar-toggler-icon {
+  opacity: 0;
+}
+.navbar-toggler--icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 100%;
+  font-size: 20px;
+}
+
+.recipes {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=index.css.map */
