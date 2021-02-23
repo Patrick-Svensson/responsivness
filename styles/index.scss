@@ -1,3 +1,7 @@
+// ***** Authored Dependencies *****
+@use "colours";
+@import "mixin";
+
 // ***** Generic *****
 
 body {
@@ -7,19 +11,18 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    color: #242635;
+    color: colours.$main;
 }
 
 .page-container {
-    width: 85%;
+    max-width: 85%;
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap;
     align-items: flex-end;
 }
 
 .navbar {
-    width: 95%;
+    max-width: 290px;
     margin: auto;
 
     &-brand {
@@ -35,11 +38,29 @@ body {
     }
 }
 
+.nav-item {
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    &:nth-child(2) {
+        padding: 0 20px 0 20px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: colours.$main;
+
+    &:hover {
+        color: lighten(colours.$main, 30%);
+    }
+}
+
 .recipes {
     max-width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap;
     justify-content: center;
     align-items: flex-end;
 }
@@ -69,3 +90,26 @@ body {
     }
 }
 
+@media screen  and (min-width: 650px) {
+
+    .navbar {
+        max-width: 630px;
+        padding-top: 35px;
+    }
+
+    .text {
+        max-width: 700px;
+        height: 200px;
+
+        &__header {
+            font-size: 72px;
+            letter-spacing: -1.6px;
+        }
+
+        &__paragraph {
+            font-size: 22px;
+            line-height: 33px;
+        }
+
+    }
+}
