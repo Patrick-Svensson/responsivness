@@ -71,7 +71,7 @@ body {
     align-items: flex-end;
 }
 
-// ***** Header *****
+// ***** Text *****
 
 .text {
     display: flex;
@@ -79,7 +79,7 @@ body {
     justify-content:space-around;
     align-items: center;
 
-    &__header {
+    &__heading {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 36px;
@@ -117,7 +117,7 @@ body {
         max-width: 700px;
         height: 200px;
 
-        &__header {
+        &__heading {
             font-size: 72px;
             letter-spacing: -1.6px;
         }
@@ -162,7 +162,7 @@ body {
         height: 300px;
         align-items: flex-start;
 
-        &__header {
+        &__heading {
             font-size: 90px;
             letter-spacing: -2px;
         }

@@ -19,41 +19,44 @@
         
         <!-- ***** Navigation ***** -->
         <!-- Navbar with collapsing dropdown menu imported from Bootstrap 4 -->
-        <nav class="navbar navbar-expand-md navbar-light  navbar-bg fixed-top">
-            <a class="navbar-brand" href="#">Head.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fas fa-ellipsis-h navbar-toggler__icon"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">                      
-                        <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
-                        <a class="nav-link " href="#">Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
-                        <a class="nav-link" href="#">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>        
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light  navbar-bg fixed-top">
+                <a class="navbar-brand" href="#">Head.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-ellipsis-h navbar-toggler__icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">                      
+                            <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
+                            <a class="nav-link " href="#">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         
         <section class="recipes">
 
-            <!-- ***** Header ***** -->
-            <header class="text">
-                <h1 class="text__header">Recipes</h1>
+            <!-- ***** Text ***** -->
+            <div class="text">
+                <h1 class="text__heading">Recipes</h1>
                 <p class="text__paragraph">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
-                    Donec viverra eleifend lacus, vitae ullamcor.</p>
-            </header>
+                    Donec viverra eleifend lacus, vitae ullamcor.
+                </p>
+            </div>
 
             <!-- Deviation from wirefames. Arrow icon selected from Fontawesome free collection instead of pro. -->
-            <i class="fas fa-arrow-down"></i>
+            <i class="fas fa-arrow-down" aria-hidden="true"></i>
 
             <!-- ***** Image ***** -->
             <picture>
