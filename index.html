@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,21 +18,26 @@
     <div class="page-container">
         
         <!-- ***** Navigation ***** -->
+        <!-- Navbar with collapsing dropdown menu imported from Bootstrap 4 -->
         <nav class="navbar navbar-expand-md navbar-light  navbar-bg fixed-top">
-            <a class="navbar-brand active" href="#">Head.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Head.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fas fa-ellipsis-h navbar-toggler__icon"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">                       
-                        <a class="nav-link " href="#">Link Item</a>
+                    <li class="nav-item">                      
+                        <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
+                        <a class="nav-link " href="#">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link Item</a>
+                        <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
+                        <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link Item</a>
+                        <!-- Deviation from wireframe. Link name costistant throughout all screen sizes. -->
+                        <a class="nav-link" href="#">Contacts</a>
                     </li>
                 </ul>
             </div>
@@ -46,9 +52,12 @@
                     Donec viverra eleifend lacus, vitae ullamcor.</p>
             </header>
 
+            <!-- Deviation from wirefames. Arrow icon selected from Fontawesome free collection instead of pro. -->
+            <i class="fas fa-arrow-down"></i>
+
             <!-- ***** Image ***** -->
-            <picture class="image">
-                <source srcset="images/recipes-desktop.png" media="(min-width: 800px)">
+            <picture>
+                <source srcset="images/recipes-desktop.png" media="(min-width: 1350px)">
                 <source srcset="images/recipes-tablet.png" media="(min-width: 650px)">
                 <img src="images/recipes-mobile.png" alt="">
             </picture>
