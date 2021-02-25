@@ -104,7 +104,7 @@ body {
     line-height: 33px;
   }
 }
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1200px) {
   .page-container {
     width: 82%;
     align-items: center;
@@ -113,7 +113,7 @@ body {
 
   .navbar {
     margin: 0;
-    max-width: 500px;
+    max-width: 40%;
     position: absolute;
     top: 20px;
     left: 0px;
@@ -147,6 +147,11 @@ body {
     bottom: 80px;
     left: 0px;
     color: #242635;
+  }
+}
+@media (min-width: 650px) and (max-height: 820px) {
+  .img {
+    max-width: 400px;
   }
 }
 
